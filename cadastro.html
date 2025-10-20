@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <!-- Formulário de Cadastro -->
+        <div class="container">
+
+            <!-- Imagem lateral formulário -->
+            <div class="imagem">
+                <img src="assets/img/cadastro.svg" alt="">
+            </div>
+
+            <!-- Formulário -->
+            <div class="formulario">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Cadastre-se e Apoie</h1>
+                        </div>
+                        <div class="login-buttom">
+                            <button>
+                                <a href="index.html">Entrar</a>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Campos do formulário -->
+                    <div class="input-group">
+
+                        <!-- Primeiro Nome: -->
+                        <div class="input-box">
+                            <label for="firstname">Nome: </label>
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu Primeiro Nome" required>
+                        </div>
+
+                        <!-- Sobrenome: -->
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome: </label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu Sobrenome" required>
+                        </div>
+
+                        <!-- CPF: -->
+                            <div class="input-box">
+                                <label for="cpf">CPF: </label>
+                                <input id="cpf" type="number" name="cpf" placeholder="Digite seu CPF" required>
+                            </div>
+
+                        <!-- Email: -->
+                         <div class="input-box">
+                            <label for="email">Email: </label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu Email" required>
+                         </div>
+
+                         <!--Telefone: -->
+                         <div class="input-box">
+                            <label for="tel">Telefone: </label>
+                            <input type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                         </div>
+
+                         <!--Endereço: -->
+                            <div class="input-box">
+                                <label for="address">Endereço: </label>
+                                <input id="address" type="text" name="address" placeholder="Digite seu Endereço" required>
+                            </div>
+
+                        <!-- CEP: -->
+                        <div class="input-box">
+                            <label for="cep">CEP: </label>
+                            <input id="cep" type="number" name="cep" placeholder="Digite seu CEP" required>
+                        </div>
+
+                        <!-- Senha: -->
+                        <div class="input-box">
+                            <label for="password">Senha: </label>
+                            <input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
+                        </div>
+
+                        <!-- Confirmar Senha: -->
+                        <div class="input-box">
+                            <label for="confirm-password">Confirmar Senha: </label>
+                            <input id="confirm-password" type="password" name="confirm-password" placeholder="Confirme sua Senha" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
