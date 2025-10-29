@@ -36,16 +36,42 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    border-top: 3px solid rgb(255, 255, 255);
 }
 
-.hamburguer::before,
-.hamburguer::after {
+.hamburger::before,
+.hamburger::after {
     content: "  ";
     display: block;
-    width: 25px;
+    width: 30px;
     height: 3px;
-    background-color: rgb(248, 247, 247);
-    margin: 5px 0;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5px;
 }
 
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background-color: bisque;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+
+    /* Fazer o circulo se expandir quando estiver ativo  6:24 */
+    }
+}
+
+
