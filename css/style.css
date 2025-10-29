@@ -1,0 +1,16 @@
+
+/* Importando outros CSS */
+@import url(navbar.css);
+
+/* Importação das fontes utilizadas via Google API */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        font-family: 'Patrick Hand SC', cursive;
+}
+

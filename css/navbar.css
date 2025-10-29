@@ -1,0 +1,51 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: bisque;
+    padding-inline: 16px;
+}
+
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-list li a {
+    font-size: 20px;
+    color: rgb(184, 109, 59);
+    padding-block: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: "  ";
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(248, 247, 247);
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
