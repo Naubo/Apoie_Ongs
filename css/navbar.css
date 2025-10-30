@@ -4,7 +4,7 @@ a {
 
 /* Estilos do cabeçalho e da barra de navegação */
 header {
-    background-color: bisque;
+    background-color: #d9b99f;
     padding-inline: 16px;
 }
 
@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
 }
 
+
 /* Estilos da lista de navegação */
 .nav-list {
     list-style: none;
@@ -29,10 +30,15 @@ header {
 /* Estilos dos links da navegação */
 .nav-list li a {
     font-size: 20px;
-    color: rgb(184, 109, 59);
+    color: #a75f37;
     padding-block: 16px;
     font-weight: bold;
     transition: color 0.3s;
+}
+
+/* Efeito hover nos links */
+.nav-list li a:hover {
+    color: #7a958f;
 }
 
 .hamburger {
@@ -67,11 +73,11 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 30vh;
     background-color: bisque;
-    clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-out;
+    clip-path: circle(10px at 90% -15%);
+    transition: 0.7s ease-out;
 
     flex-direction: column;
     justify-content: space-around;
@@ -85,6 +91,12 @@ header {
         font-size: 24px;
         opacity: 0.7;
     }
+
+    /* Hover nos itens da lista em hamburguer */
+    .nav-list li a:hover {
+        color: #7a958f;
+    }
+
     
     /* Transições em cascata */
     .nav-list li:nth-child(1) a {

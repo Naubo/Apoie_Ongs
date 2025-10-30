@@ -1,16 +1,31 @@
 
 /* Importando outros CSS */
 @import url(navbar.css);
+@import url(cards.css);
 
 /* Importação das fontes utilizadas via Google API */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Patrick+Hand+SC&display=swap');
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
         font-family: 'Patrick Hand SC', cursive;
+        background-color: #f0f8ff;
+        color: #333;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+
+.intro {
+    max-width: 1200px;
+}
+
+h1 {
+    margin-top: 10px;
 }
 
