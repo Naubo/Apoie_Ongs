@@ -2,11 +2,13 @@ a {
     text-decoration: none;
 }
 
+/* Estilos do cabeçalho e da barra de navegação */
 header {
     background-color: bisque;
     padding-inline: 16px;
 }
 
+/* Estilos da barra de navegação */
 .nav {
     max-width: 1280px;
     height: 70px;
@@ -17,12 +19,14 @@ header {
     justify-content: space-between;
 }
 
+/* Estilos da lista de navegação */
 .nav-list {
     list-style: none;
     display: flex;
     gap: 32px;
 }
 
+/* Estilos dos links da navegação */
 .nav-list li a {
     font-size: 20px;
     color: rgb(184, 109, 59);
@@ -38,7 +42,7 @@ header {
     cursor: pointer;
     border-top: 3px solid rgb(255, 255, 255);
 }
-
+/* Linhas do hamburger */
 .hamburger::before,
 .hamburger::after {
     content: "  ";
@@ -47,13 +51,18 @@ header {
     height: 3px;
     background-color: rgb(255, 255, 255);
     margin-top: 5px;
+    position: relative;
+    transition: transform 0.3s, ;
 }
 
+/* Estilos para telas menores que 768px */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+        z-index: 1;
     }
 
+    /* Estilos iniciais do menu */
     .nav-list {
     position: fixed;
     top: 0;
@@ -62,15 +71,57 @@ header {
     height: 100vh;
     background-color: bisque;
     clip-path: circle(100px at 90% -15%);
-    transition: 1s ease;
+    transition: 1s ease-out;
 
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 0;
     pointer-events: none;
+    }
 
-    /* Fazer o circulo se expandir quando estiver ativo  6:24 */
+    /* Estilos iniciais dos links */
+    .nav-list li a {
+        font-size: 24px;
+        opacity: 0.7;
+    }
+    
+    /* Transições em cascata */
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6;
+    }
+    
+
+    /* Estilo dos links ativos */
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all; 
+    }
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    /* Estilos do hamburger ativo */
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    /* Animação das linhas do hamburger */
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        margin-top: -7px;
     }
 }
 
