@@ -1,0 +1,207 @@
+/* Estilos para o formulário de cadastro */
+.container {
+    width: 80% ;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos da seção de imagem */
+.imagem {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7a958f;
+    padding: 1rem;
+}
+
+/* Estilos da imagem */
+.imagem img {
+    width: 31rem
+}
+
+/* Estilos do formulário */
+.formulario {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+/* Estilos do cabeçalho do formulário */
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos do botão de login */
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos do botão do botão de login */
+.login-button button {
+    background-color: #d9b99f;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito hover no botão de login */
+.login-button button:hover {
+    background-color: #a75f37;    
+}
+
+/* Estilos do link dentro do botão de login */
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilos do título do formulário */
+.form-header h1::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #7a958f;
+    margin-top: 8px;
+}
+/* Estilos do grupo de inputs */
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/* Estilos de cada caixa de input */
+input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+/* Estilos dos inputs */
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(100, 100, 100, 0.104);
+}
+
+/* Efeito hover e focus nos inputs */
+.input-box input:hover {
+background-color: #cda8a826;
+}
+.input-box input:focus-visible {
+    outline: 2px solid #7a958f;
+}
+
+/* Estilos dos labels e placeholders */
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+/* Estilos dos inputs de gênero */
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input input {
+    margin-right: 0.5rem;
+}
+
+.gender-input label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000000ce;
+}
+
+/* Estilos do botão de envio */
+.form-button button{
+width: 100%;
+margin-top: 2.5rem;
+border: none;
+background-color: #d9b99f;
+color: #fff;
+padding: 0.62rem;
+cursor: pointer;
+border-radius: 5px;
+}
+
+/* Efeito hover no botão de envio */
+.form-button button:hover {
+    background-color: #a75f37;
+}
+
+
+/* Estilos do link dentro do botão de envio */
+.form-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 1330px) {
+    .imagem {
+        display: none;
+    }
+
+    .container {
+        width: 50% ;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+}
+
+/* Media Queries para telas menores */
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90% ;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .gender-input {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-input {
+        margin-bottom: 1rem;
+    }
+}
