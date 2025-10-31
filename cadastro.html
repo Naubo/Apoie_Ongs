@@ -12,7 +12,7 @@
 <body>
     <main>
         <!-- Formulário de Cadastro -->
-        <div class="container">
+        <fieldset class="container">
 
             <!-- Imagem lateral formulário -->
             <div class="imagem">
@@ -20,7 +20,7 @@
             </div>
 
             <!-- Formulário -->
-            <div class="formulario">
+            <section class="formulario">
                 <form action="#">
                     <div class="form-header">
                         <div class="title">
@@ -51,19 +51,19 @@
                         <!-- CPF: -->
                             <div class="input-box">
                                 <label for="cpf">CPF: </label>
-                                <input id="cpf" type="number" name="cpf" placeholder="Digite seu CPF" required>
+                                <input id="cpf" type="number" name="cpf" placeholder="000.000.000-00" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
                             </div>
 
                         <!-- Email: -->
                          <div class="input-box">
                             <label for="email">Email: </label>
-                            <input id="email" type="email" name="email" placeholder="Digite seu Email" required>
+                            <input id="email" type="email" name="email" placeholder="exemplo@email.com" required>
                          </div>
 
                          <!--Telefone: -->
                          <div class="input-box">
                             <label for="tel">Telefone: </label>
-                            <input type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                            <input type="tel" name="number" placeholder="(xx) xxxx-xxxx" required pattern="\(\d{2}\)\s\d{5}-\d{4}">
                          </div>
 
                          <!--Endereço: -->
@@ -75,7 +75,7 @@
                         <!-- CEP: -->
                         <div class="input-box">
                             <label for="cep">CEP: </label>
-                            <input id="cep" type="number" name="cep" placeholder="Digite seu CEP" required>
+                            <input id="cep" type="number" name="cep" placeholder="Digite seu CEP" required pattern="\d{5}-\d{3}">
                         </div>
 
                         <!-- Senha: -->
@@ -125,11 +125,10 @@
                     <!-- Botão de envio do formulário -->
                     <div class="form-button">
                         <button type="submit"><a href="">Continuar</a></button>
-
+                    </div>
                 </form>
-            </div>
-        </div>
-
+            </section>
+        </fieldset>
 
     </main>
 </body>
