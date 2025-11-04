@@ -1,179 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Icon da página-->
-    <link rel="icon" href="../assets/icons/icon.png" type="image/png">
-    <!--Link do CSS-->
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Cadastro</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--Icon da página-->
+<link rel="icon" href="../assets/icons/icon.png" type="image/png" />
+<!--Link do CSS-->
+<link rel="stylesheet" href="../css/style.css" />
+<title>Cadastro</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <!--Logo do site-->
-            <img class="logo" src="../assets/icons/icon.png" alt="Logo do Site" width="50" height="50">
+<header class="header">
+    <nav class="nav">
+    <!--Logo do site-->
+    <img
+        class="logo"
+        src="../assets/icons/icon.png"
+        alt="Logo do Site"
+        width="50"
+        height="50"
+    />
 
-<button class="hamburger"></button>
-            
+    <button class="hamburger"></button>
+
     <!--Lista dos itens da navbar-->
-            <ul class="nav-list">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="projetos.html">projetos</a></li>
-                <li><a href="doacoes.html">Doações</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-             <div class="theme-controls">
-          <button id="darkModeBtn" aria-label="Ativar modo escuro">
-            <img
-              src="../assets/icons/moon-solid.svg"
-              alt="Lua Minguante - Modo Escuro"
-              width="20px"
-            />
-          </button>
-          <button id="contrastModeBtn" aria-label="Ativar alto contraste">
-            <img
-              src="../assets/icons/circle-half.svg"
-              alt="Meia Lua - Modo Alto Contraste"
-              width="20px"
-            />
-          </button>
-          <button id="resetThemeBtn" aria-label="Restaurar tema padrão">
-            <img
-              src="../assets/icons/sun-mark.svg"
-              alt="Sol - Modo Padrão"
-              width="20px"
-            />
-          </button>
+    <ul class="nav-list">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="projetos.html">projetos</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+    <div class="theme-controls">
+        <button id="darkModeBtn" aria-label="Ativar modo escuro">
+        <img
+            src="../assets/icons/moon-solid.svg"
+            alt="Lua Minguante - Modo Escuro"
+            width="20px"
+        />
+        </button>
+        <button id="contrastModeBtn" aria-label="Ativar alto contraste">
+        <img
+            src="../assets/icons/circle-half.svg"
+            alt="Meia Lua - Modo Alto Contraste"
+            width="20px"
+        />
+        </button>
+        <button id="resetThemeBtn" aria-label="Restaurar tema padrão">
+        <img
+            src="../assets/icons/sun-mark.svg"
+            alt="Sol - Modo Padrão"
+            width="20px"
+        />
+        </button>
+    </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Formulário de Cadastro -->
+    <fieldset class="container">
+    <!-- Imagem lateral formulário -->
+    <div class="imagem">
+        <img src="../assets/img/cadastro.svg" alt="" />
+    </div>
+
+    <!-- Formulário -->
+    <section class="formulario">
+        <form action="#">
+        <div class="form-header">
+            <div class="title">
+            <h1>Cadastre-se e Apoie</h1>
+            </div>
+            <div class="login-button">
+            <button>
+                <a href="../index.html">Entrar</a>
+            </button>
+            </div>
         </div>
-        </nav>
-    </header>
 
-
-    <main>
-        <!-- Formulário de Cadastro -->
-        <fieldset class="container">
-
-            <!-- Imagem lateral formulário -->
-            <div class="imagem">
-                <img src="../assets/img/cadastro.svg" alt="">
+        <!-- Campos do formulário -->
+        <div class="input-group">
+            <!-- Primeiro Nome: -->
+            <div class="input-box">
+            <label for="firstname">Nome: </label>
+            <input
+                id="firstname"
+                type="text"
+                name="firstname"
+                placeholder="Digite seu Primeiro Nome"
+                required
+            />
             </div>
 
-            <!-- Formulário -->
-            <section class="formulario">
-                <form action="#">
-                    <div class="form-header">
-                        <div class="title">
-                            <h1>Cadastre-se e Apoie</h1>
-                        </div>
-                        <div class="login-button">
-                            <button>
-                                <a href="index.html">Entrar</a>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- Campos do formulário -->
-                    <div class="input-group">
+            <!-- Sobrenome: -->
+            <div class="input-box">
+            <label for="lastname">Sobrenome: </label>
+            <input
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Digite seu Sobrenome"
+                required
+            />
+            </div>
 
-                        <!-- Primeiro Nome: -->
-                        <div class="input-box">
-                            <label for="firstname">Nome: </label>
-                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu Primeiro Nome" required>
-                        </div>
+            <!-- CPF: -->
+            <div class="input-box">
+            <label for="cpf">CPF: </label>
+            <input
+                id="cpf"
+                type="text"
+                name="cpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                required
+            />
+            </div>
 
-                        <!-- Sobrenome: -->
-                        <div class="input-box">
-                            <label for="lastname">Sobrenome: </label>
-                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu Sobrenome" required>
-                        </div>
+            <!-- Email: -->
+            <div class="input-box">
+            <label for="email">Email: </label>
+            <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="exemplo@email.com"
+                required
+            />
+            </div>
 
-                        <!-- CPF: -->
-                            <div class="input-box">
-                                <label for="cpf">CPF: </label>
-                                <input id="cpf" type="number" name="cpf" placeholder="000.000.000-00" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
-                            </div>
+            <!--Telefone: -->
+            <div class="input-box">
+            <label for="tel">Telefone: </label>
+            <input
+                id="telefone"
+                type="text"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+                maxlength="15"
+                required
+            />
+            </div>
 
-                        <!-- Email: -->
-                         <div class="input-box">
-                            <label for="email">Email: </label>
-                            <input id="email" type="email" name="email" placeholder="exemplo@email.com" required>
-                         </div>
+            <!--Endereço: -->
+            <div class="input-box">
+            <label for="address">Endereço: </label>
+            <input
+                id="address"
+                type="text"
+                name="address"
+                placeholder="Digite seu Endereço"
+                required
+            />
+            </div>
 
-                         <!--Telefone: -->
-                         <div class="input-box">
-                            <label for="tel">Telefone: </label>
-                            <input type="tel" name="number" placeholder="(xx) xxxx-xxxx" required pattern="\(\d{2}\)\s\d{5}-\d{4}">
-                         </div>
+            <!-- CEP: -->
+            <div class="input-box">
+            <label for="cep">CEP: </label>
+            <input
+                id="cep"
+                type="text"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="9"
+                required
+            />
+            </div>
 
-                         <!--Endereço: -->
-                            <div class="input-box">
-                                <label for="address">Endereço: </label>
-                                <input id="address" type="text" name="address" placeholder="Digite seu Endereço" required>
-                            </div>
+            <!-- Senha: -->
+            <div class="input-box">
+            <label for="password">Senha: </label>
+            <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Digite sua Senha"
+                required
+            />
+            </div>
 
-                        <!-- CEP: -->
-                        <div class="input-box">
-                            <label for="cep">CEP: </label>
-                            <input id="cep" type="number" name="cep" placeholder="Digite seu CEP" required pattern="\d{5}-\d{3}">
-                        </div>
+            <!-- Confirmar Senha: -->
+            <div class="input-box">
+            <label for="confirm-password">Confirmar Senha: </label>
+            <input
+                id="confirm-password"
+                type="password"
+                name="confirm-password"
+                placeholder="Confirme sua Senha"
+                required
+            />
+            </div>
+        </div>
 
-                        <!-- Senha: -->
-                        <div class="input-box">
-                            <label for="password">Senha: </label>
-                            <input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
-                        </div>
+        <!-- Gênero -->
+        <div class="gender-inputs">
+            <div class="gender-title">
+            <h3>Gênero:</h3>
+            </div>
 
-                        <!-- Confirmar Senha: -->
-                        <div class="input-box">
-                            <label for="confirm-password">Confirmar Senha: </label>
-                            <input id="confirm-password" type="password" name="confirm-password" placeholder="Confirme sua Senha" required>
-                        </div>
-                    </div>
+            <!-- Botões de radio para seleção de genero -->
+            <div class="gender-group">
+            <div class="gender-input">
+                <input type="radio" id="female" name="gender" />
+                <label for="female">Feminino</label>
+            </div>
 
-                    <!-- Gênero -->
-                    <div class="gender-inputs">
-                        <div class="gender-title">
-                            <h3>Gênero:</h3>
-                        </div>
-                        
-                        <!-- Botões de radio para seleção de genero -->
-                        <div class="gender-group">
-                            <div class="gender-input">
-                                <input type="radio" id="female" name="gender">
-                                <label for="female">Feminino</label>
-                            </div>
+            <div class="gender-input">
+                <input type="radio" id="male" name="gender" />
+                <label for="male">Masculino</label>
+            </div>
 
-                            <div class="gender-input">
-                                <input type="radio" id="male" name="gender">
-                                <label for="male">Masculino</label>
-                            </div>
+            <div class="gender-input">
+                <input type="radio" id="others" name="gender" />
+                <label for="others">Outro</label>
+            </div>
 
-                            <div class="gender-input">
-                                <input type="radio" id="others" name="gender">
-                                <label for="others">Outro</label>
-                            </div>
+            <div class="gender-input">
+                <input type="radio" id="none" name="gender" />
+                <label for="none">Prefiro não dizer</label>
+            </div>
+            </div>
+        </div>
 
-                            <div class="gender-input">
-                                <input type="radio" id="none" name="gender">
-                                <label for="none">Prefiro não dizer</label>
-                            </div>
-                        
-                        </div>
-                    </div>
-
-                    <!-- Botão de envio do formulário -->
-                    <div class="form-button">
-                        <button type="submit"><a href="">Continuar</a></button>
-                    </div>
-                </form>
-            </section>
-        </fieldset>
-    </main>
+        <!-- Botão de envio do formulário -->
+        <div class="form-button">
+            <button type="submit"><a href="">Continuar</a></button>
+        </div>
+        </form>
+    </section>
+    </fieldset>
+</main>
     <footer>
-            <p>&copy; 2025 Apóie Ongs. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Apóie Ongs. Todos os direitos reservados.</p>
+    <p>Conteúdo meramente ilustrativo.</p>
 </footer>
-        <script src="../js/script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
