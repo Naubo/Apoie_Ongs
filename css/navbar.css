@@ -4,7 +4,7 @@ a {
 
 /* Estilos do cabeçalho e da barra de navegação */
 header {
-    background-color: #d9b99f;
+    background-color: var(--cor-secundaria);
     padding-inline: 16px;
 }
 
@@ -29,8 +29,8 @@ header {
 
 /* Estilos dos links da navegação */
 .nav-list li a {
-    font-size: 20px;
-    color: #a75f37;
+    font-size: var(--fs-l);
+    color: var(--cor-primaria);
     padding-block: 16px;
     font-weight: bold;
     transition: color 0.3s;
@@ -38,7 +38,7 @@ header {
 
 /* Efeito hover nos links */
 .nav-list li a:hover {
-    color: #7a958f;
+    color: var(--cor-aviso);
 }
 
 .hamburger {
@@ -75,7 +75,7 @@ header {
     left: 0;
     width: 100%;
     height: 30vh;
-    background-color: bisque;
+    background-color: var(--cor-secundaria);
     clip-path: circle(10px at 90% -15%);
     transition: 0.7s ease-out;
 
@@ -94,7 +94,7 @@ header {
 
     /* Hover nos itens da lista em hamburguer */
     .nav-list li a:hover {
-        color: #7a958f;
+        color: var(--cor-aviso);
     }
 
     
@@ -137,4 +137,128 @@ header {
     }
 }
 
+/* ********************************************
+Modo Escuro
+*********************************************** */
+body.dark-mode {
+  --color-primary: #21867a;
+  --color-primary-dark: #3b3835;
+  --color-secondary: #ffa24a;
+  --color-neutral-100: #1a1a1a;
+  --color-neutral-400: #aaa;
+  --color-neutral-700: #e0e0e0;
+  --color-neutral-900: #f9f9f9;
+
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-900);
+}
+
+body.dark-mode a {
+  color: #000000;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: var(--color-primary-dark);
+}
+
+body.dark-mode .navbar a,
+body.dark-mode footer p {
+  color: #fff;
+}
+
+body.dark-mode .card-projeto {
+  background-color: #2a2a2a;
+  border-color: #3d3d3d;
+}
+
+body.dark-mode .card-text a {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+
+
+body.dark form {
+  background-color: #222;
+  color: var(--color-neutral-900);
+  border: 1px solid #333;
+}
+
+body.dark form input,
+body.dark form label {
+  background-color: #111;
+  color: #eee;
+  border-color: #444;
+}
+
+/* ********************************************
+Modo Alto Contraste
+*********************************************** */
+body.high-contrast {
+  --color-primary: #000;
+  --color-secondary: #d580ff;
+  --color-neutral-100: #fff;
+  --color-neutral-900: #000;
+
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-900);
+}
+
+body.high-contrast .navbar,
+body.high-contrast footer {
+  background-color: #000;
+  color: #fff;
+}
+
+body.high-contrast a,
+body.high-contrast button {
+  background-color: #000;
+  color: var(--cor-neutra-1) !important;
+  border: 2px solid var(--cor-secondary);
+}
+
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3 {
+  color: #000;
+  background-color: var(--color-secondary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+body.high-contrast form {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+/* ********************************************
+Estilo dos Botões
+*********************************************** */
+.theme-controls {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.theme-controls button {
+  background: var(--cor-primary);
+  border: 2px solid var(--color-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-controls button:hover {
+  background: var(--color-secondary);
+}
+
+.theme-controls button img {
+  filter: brightness(0) invert(1);
+}
 

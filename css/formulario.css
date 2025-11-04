@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7a958f;
+    background-color: var(--cor-erro);
     padding: 1rem;
 }
 
@@ -28,8 +28,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--cor-neutra-1);
     padding: 3rem;
+    font-size: --fs-m;
 }
 
 /* Estilos do cabeçalho do formulário */
@@ -47,7 +48,7 @@
 
 /* Estilos do botão do botão de login */
 .login-button button {
-    background-color: #d9b99f;
+    background-color: var(--cor-sucesso);
     border: none;
     padding: 0.4rem 1rem;
     border-radius: 5px;
@@ -57,7 +58,7 @@
 
 /* Efeito hover no botão de login */
 .login-button button:hover {
-    background-color: #a75f37;    
+    background-color: var(--cor-primaria);    
 }
 
 /* Estilos do link dentro do botão de login */
@@ -65,7 +66,7 @@
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: --fs-xxl;
 }
 
 /* Estilos do título do formulário */
@@ -103,15 +104,15 @@ input-box {
 
 /* Efeito hover e focus nos inputs */
 .input-box input:hover {
-background-color: #cda8a826;
+background-color: #f5f5f5;
 }
 .input-box input:focus-visible {
-    outline: 2px solid #7a958f;
+    outline: 2px solid var(--cor-primaria);
 }
 
 /* Estilos dos labels e placeholders */
 .input-box label {
-    font-size: 0.75rem;
+    font-size: var(--fs-m);
     font-weight: 600;
     color: #000000c0;
 }
@@ -142,7 +143,7 @@ background-color: #cda8a826;
 width: 100%;
 margin-top: 2.5rem;
 border: none;
-background-color: #d9b99f;
+background-color: var(--cor-secundaria);
 color: #fff;
 padding: 0.62rem;
 cursor: pointer;
@@ -151,7 +152,7 @@ border-radius: 5px;
 
 /* Efeito hover no botão de envio */
 .form-button button:hover {
-    background-color: #a75f37;
+    background-color: var(--cor-primaria);
 }
 
 
@@ -163,8 +164,10 @@ border-radius: 5px;
     font-size: 0.9rem;
 }
 
+
+
 /* Media Queries para responsividade */
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1485px) {
     .imagem {
         display: none;
     }
@@ -179,7 +182,7 @@ border-radius: 5px;
 }
 
 /* Media Queries para telas menores */
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1191px) {
     .container {
         width: 90% ;
         height: auto;

@@ -1,6 +1,6 @@
 
 :root {
-  /* Cores principais */
+  /* paleta de cores */
   --cor-primaria: #a75f37;
   --cor-secundaria: #d9b99f;
   --cor-neutra-1: #f2e7dd;
@@ -11,7 +11,7 @@
   --cor-info: #f2d6ce;
 
   /* Tipografia */
-  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-principal: 'Patrick Hand SC', sans-serif;
   --fonte-titulo: 'Montserrat', sans-serif;
   --fs-xxl: 2.5rem;
   --fs-xl: 2rem;

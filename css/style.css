@@ -18,9 +18,9 @@
 body {
         width: 100%;
         height: 100vh;
-        font-family: 'Patrick Hand SC', cursive;
-        background-color: #f2e7dd;
-        color: #333;
+        font-family: var(--fonte-principal), cursive;
+        background-color: var(--cor-neutra-1);
+        color: #000000;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -31,6 +31,19 @@ body {
 }
 
 h1 {
-    margin-top: 10px;
+    margin-top: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: var(--fs-xl);
 }
 
+.contato {
+    font-size: var(--fs-m);
+    padding-bottom: 30px;
+
+}
+
+footer {
+    padding-top: 0px;
+    font-size: var(--fs-m);
+
+}
