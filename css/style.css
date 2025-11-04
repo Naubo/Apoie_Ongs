@@ -43,3 +43,7 @@ footer {
   padding-top: 0px;
   font-size: var(--fs-m);
 }
+
+.qr-code {
+    padding: 40px;
+}   
